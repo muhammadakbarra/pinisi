@@ -7,6 +7,7 @@ export default function JalurSawi() {
         { name: 'Sawi 2', href: '/jalur-sawi/sawi-2' },
         { name: 'Sawi 2.1', href: '/jalur-sawi/sawi-2-1' },
         { name: 'Sawi 3', href: '/jalur-sawi/sawi-3' },
+        { name: 'Sawi 4', href: '/jalur-sawi/sawi-4' },
     ];
 
     return (
