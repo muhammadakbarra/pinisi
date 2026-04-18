@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 export default function Sawi2V2() {
-    const fadeInVariants = {
+    const fadeInVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } }
     };
@@ -37,7 +37,7 @@ export default function Sawi2V2() {
                         Ya memang, kisah terpecahnya perahu Sawerigading di Tanjung Bira itu tidak terdapat dalam satu pun dari sekian ratus <Link href="https://brill.com/view/journals/bki/155/3/article-p362_3.xml?language=en" target="_blank" className="text-blue-700 underline decoration-2">naskah siklus La Galigo</Link>: Dalam jalur ceritanya, Sawerigading akhirnya kembali ke Luwu dengan selamat, di mana ia dinobatkan <Link href="https://digitalcollections.universiteitleiden.nl/view/item/107930" target="_blank" className="text-blue-700 underline decoration-2">menjadi penghulu Dunia Bawah</Link>, menggantikan pamannya.
                     </p>
                     <p>
-                        Dan, ya, lagi – negeri ‘Cina’ yang ia tuju pada pelayarannya mencari jodoh <Link href="https://www.jstor.org/stable/26281594?seq=9" target="_blank" className="text-blue-700 underline decoration-2">bukan Tiongkok</Link>, tetapi dalam teks-teks aslinya selalu dijuluki “Tana Ugi”, ‘<Link href="https://drive.google.com/open?id=1KuYlbDbleq7xoFMKA-Nopp65yBHT5a3P&usp=drive_fs" target="_blank" className="text-blue-700 underline decoration-2">Tanah [Orang] Bugis</Link>’.
+                        Dan, ya, lagi – negeri ‘Cina’ yang ia tuju pada pelayarannya mencari jodoh <Link href="https://www.jstor.org/stable/26281594?seq=9" target="_blank" className="text-blue-700 underline decoration-2">bukan Tiongkok</Link>, tetapi dalam teks-texts aslinya selalu dijuluki “Tana Ugi”, ‘<Link href="https://drive.google.com/open?id=1KuYlbDbleq7xoFMKA-Nopp65yBHT5a3P&usp=drive_fs" target="_blank" className="text-blue-700 underline decoration-2">Tanah [Orang] Bugis</Link>’.
                     </p>
                 </motion.div>
 

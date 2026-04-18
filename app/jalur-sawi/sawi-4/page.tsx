@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const MuseumGrid = ({ images, allFull = false }: { images: string[], allFull?: boolean }) => {
     return (
@@ -51,7 +51,7 @@ export default function Sawi4() {
         '/sawi/slide-2/4.jpg',
     ];
 
-    const fadeInVariants = {
+    const fadeInVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } }
     };
@@ -120,7 +120,7 @@ export default function Sawi4() {
 
                 {/* Tombol Navigasi Bawah */}
                 <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className='mt-4 flex justify-between items-center'>
-                    <Link href="/jalur-sawi/sawi-3" className='bg-white px-6 py-3 rounded-2xl shadow-md text-gray-800 font-bold active:scale-95 transition-transform'>
+                    <Link href="/jalur-sawi/sawi-3" className='bg-white px-6 py-3 rounded-2xl shadow-md text-gray-900 font-bold active:scale-95 transition-transform'>
                         ← Kembali
                     </Link>
                     <Link href="/jalur-sawi" className='bg-[#f8c24a] px-6 py-3 rounded-2xl shadow-md text-gray-900 font-bold active:scale-95 transition-transform'>

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const MuseumGrid = ({ images, allFull = false }: { images: string[], allFull?: boolean }) => {
     return (
@@ -51,7 +51,7 @@ export default function Sawi4V2() {
         '/sawi/slide-2/4.jpg',
     ];
 
-    const fadeInVariants = {
+    const fadeInVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } }
     };
@@ -96,7 +96,6 @@ export default function Sawi4V2() {
                     <MuseumGrid images={section3Images} allFull />
                 </motion.div>
 
-                {/* Teks Penutup */}
                 <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeInVariants} className='space-y-8 text-lg text-gray-900 leading-relaxed font-bold text-justify'>
                     <p>
                         Berbeda pula dengan kebanyakan kapal layar historis buatan ‘Barat’ yang buritannya bersegi-empat, perahu-perahu tradisional Nusantara pada umumnya berburitan lancip; dan sementara lunas dan linggi, balok kayu haluan dan buritan kapal ‘Barat’ sering lurus dan dipasang secara bersudut, pada kebanyakan perahu Nusantara lunas dan linggi melengkung bak bulan yang baru.
