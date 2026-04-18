@@ -2,16 +2,19 @@
 
 import { QRCodeSVG } from 'qrcode.react';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function MobileModal() {
+    const pathname = usePathname();
     const [currentUrl, setCurrentUrl] = useState('');
 
     useEffect(() => {
-        // Mendapatkan URL saat ini secara dinamis
+        // Mendapatkan origin (domain) dan menggabungkannya dengan pathname saat ini
         if (typeof window !== 'undefined') {
-            setCurrentUrl(window.location.href);
+            const origin = window.location.origin;
+            setCurrentUrl(`${origin}${pathname}`);
         }
-    }, []);
+    }, [pathname]); // Akan terupdate setiap kali pathname berubah
 
     return (
         <div className='hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm md:flex items-center justify-center p-4'>
@@ -43,8 +46,9 @@ export default function MobileModal() {
                     )}
                 </div>
 
-                <div className='bg-gray-50 rounded-xl p-4 text-sm text-gray-500 mb-8 w-full'>
-                    Scan QR Code di atas menggunakan kamera HP Anda untuk membuka halaman ini secara instan.
+                <div className='bg-gray-50 rounded-xl p-4 text-sm text-gray-500 mb-8 w-full text-center'>
+                    <p className='mb-1 font-bold text-gray-700'>Scan QR Code di atas</p>
+                    <p>Untuk membuka halaman ini secara instan di HP Anda.</p>
                 </div>
 
                 <div className='w-full pt-6 border-t border-gray-100'>
