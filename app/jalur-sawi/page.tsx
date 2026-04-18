@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Home() {
-    const jalurs = [
-        { name: 'Jalur Sawi', href: '/jalur-sawi' },
-        { name: 'Jalur A', href: '/jalur-a' },
-        { name: 'Jalur B', href: '/jalur-b' },
-        { name: 'Jalur C', href: '/jalur-c' },
+export default function JalurSawi() {
+    const sawis = [
+        { name: 'Sawi 1', href: '/jalur-sawi/sawi-1' },
+        { name: 'Sawi 2', href: '/jalur-sawi/sawi-2' },
+        { name: 'Sawi 2.1', href: '/jalur-sawi/sawi-2-1' },
+        { name: 'Sawi 3', href: '/jalur-sawi/sawi-3' },
     ];
 
     return (
@@ -24,19 +24,24 @@ export default function Home() {
 
             {/* Konten Utama Mobile */}
             <div className='relative z-10 p-8 md:hidden flex flex-col items-center'>
-                <h1 className='text-5xl font-black tracking-[0.2em] text-gray-900 mt-12 mb-16'>
-                    PINISI
-                </h1>
+                <div className='w-full flex items-center mb-12 mt-4'>
+                    <Link href="/" className="text-gray-900 text-3xl mr-4 hover:scale-110 transition-transform">
+                        ←
+                    </Link>
+                    <h1 className='text-4xl font-black tracking-tight text-gray-900'>
+                        Jalur Sawi
+                    </h1>
+                </div>
 
                 <div className='w-full space-y-4 px-2'>
-                    {jalurs.map((jalur) => (
+                    {sawis.map((sawi) => (
                         <Link 
-                            key={jalur.name}
-                            href={jalur.href}
+                            key={sawi.name}
+                            href={sawi.href}
                             className='group block w-full bg-white hover:bg-[#f8c24a] active:bg-[#f8c24a] p-6 rounded-2xl shadow-sm border border-black/5 active:scale-95 transition-all duration-200'
                         >
                             <div className='flex items-center justify-between'>
-                                <span className='text-xl font-bold text-gray-800'>{jalur.name}</span>
+                                <span className='text-xl font-bold text-gray-800'>{sawi.name}</span>
                                 <span className='text-2xl font-black transition-all duration-300 transform group-hover:translate-x-2 text-[#f8c24a] group-hover:text-gray-900'>
                                     →
                                 </span>
