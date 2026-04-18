@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import MobileModal from '@/components/MobileModal';
 
 import './globals.css';
 
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en' className='h-full antialiased'>
-            <body className='min-h-full flex flex-col text-black'>{children}</body>
+            <body className='min-h-full flex flex-col text-black'>
+                {children}
+                <MobileModal />
+            </body>
         </html>
     );
 }

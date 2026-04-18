@@ -24,7 +24,7 @@ export default function Sawi3V2() {
             </div>
 
             {/* Konten Utama Mobile */}
-            <div className='relative z-10 p-6 md:hidden flex flex-col min-h-screen gap-10 overflow-y-auto'>
+            <div className='relative z-10 p-6 md:hidden flex flex-col min-h-screen gap-10 overflow-y-auto pb-24'>
                 {/* Teks Cerita 1 Tanpa Card */}
                 <motion.div 
                     initial="hidden"
@@ -83,10 +83,10 @@ export default function Sawi3V2() {
                     className='space-y-8'
                 >
                     <p className='text-lg text-gray-900 leading-relaxed font-bold text-justify'>
-                        Bagaimana deh – sayangnya tak satu dari terka-terkaan itu dapat dibuktikan: Kata ‘pinisi’ sama sekali tak terdapat dalam <Link href="https://lib.ui.ac.id/detail?id=20213248&lokasi=lokal" target="_blank" className="text-blue-700 underline decoration-2">naskah-naskah Sulawesi Selatan</Link>, baik asal Makassar, Bugis maupun Mandar, yang dikarang sebelum abad ke-20 sehingga tak mungkin ada raja Makassar abad ke-17 yang menciptakannya; layar tipe sekunar <Link href="https://www.jstor.org/stable/41562610" target="_blank" className="text-blue-700 underline decoration-2">tidak berasal dari Venesia</Link>, dan tidak pernah ada <Link href="https://www.archiviodistatovenezia.it/it/" target="_blank" className="text-blue-700 underline decoration-2">Catatan</Link> bahwa perahu Sulawesi bersandar di pelabuhannya; ia pun tak terdapat dalam berbagai rekaman dan arsip Kompeni-Kompeni Hindia Timur <Link href="https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/overzicht-van-voc-archieven-1594-1814" target="_blank" className="text-blue-700 underline decoration-2">Belanda</Link> dan <Link href="https://www.eastindiacompany.amdigital.co.uk/" target="_blank" className="text-blue-700 underline decoration-2">inggris</Link>; para tukang perahu di Bontobahari berbahasa Konjo, bukan Bugis, dan, ya, lambung <Link href="#" className="text-blue-700 underline decoration-2">tipe-tipe perahu</Link> lain seperti padewakang, pajala atau palari dipakal juga .... 
+                        Bagaimana deh – sayangnya tak satu dari terka-terkaan itu dapat dibuktikan: Kata ‘pinisi’ sama sekali tak terdapat dalam <Link href="https://lib.ui.ac.id/detail?id=20213248&lokasi=lokal" target="_blank" className="text-blue-700 underline decoration-2">naskah-naskah Sulawesi Selatan</Link>, baik asal Makassar, Bugis maupun Mandar, yang dikarang sebelum abad ke-20 sehingga tak mungkin ada raja Makassar abad ke-17 yang menciptakannya; layar tipe sekunar <Link href="https://www.jstor.org/stable/41562610" target="_blank" className="text-blue-700 underline decoration-2">tidak berasal dari Venesia</Link>, dan tidak pernah ada <Link href="https://www.archiviodistatovenezia.it/it/" target="_blank" className="text-blue-700 underline decoration-2">Catatan</Link> bahwa perahu Sulawesi bersandar di pelabuhannya; ia pun tak terdapat dalam berbagai rekaman dan arsip Kompeni-Kompeni Hindia Timur <Link href="https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/overzicht-van-voc-archieven-1594-1814" target="_blank" className="text-blue-700 underline decoration-2">Belanda</Link> dan <Link href="https://www.eastindiacompany.amdigital.co.uk/" target="_blank" className="text-blue-700 underline decoration-2">inggris</Link>; para tukang perahu di Bontobahari berbahasa Konjo, bukan Bugis, dan, ya, lambung <Link href="/jalur-sawi/sawi-4-v2" className="text-blue-700 underline decoration-2">tipe-tipe perahu</Link> lain seperti padewakang, pajala atau palari dipakal juga .... 
                     </p>
                     <p className='text-xl text-gray-900 leading-relaxed font-black text-justify bg-black/5 p-6 rounded-3xl border-2 border-black/10'>
-                        Dan, sama dengan adanya ‘pinisi’ dalam naskah-naskah La Galigo, bila Bestie mendapatkan perahu pinisi Sulawesi dalam arsip-arsip pelabuhan Venesia atau Kompeni Dagang Belanda dan Inggris itu, laporkanlah, dan kami langsung berikan 10 juta lagi!
+                        Dan, sama dengan adanya ‘pinisi’ dalam naskah-naskah La Galigo, bila Bestie mendapatkan perahu pinisi Sulawesi dalam arsip-arsip pelabuhan Venesia atau Kompeni Dagang Belanda dan Inggris itu, laporkanlah, and kami langsung berikan 10 juta lagi!
                     </p>
                     <p className='text-lg text-gray-800 italic font-bold text-justify leading-relaxed pt-6 border-t border-black/10'>
                         Tapi ya, apakah entah pernah ada seorang yang bernama Pinisi yang nongkrong-nongkrong di Bira itu lain lagi ceritanya ....
@@ -107,34 +107,6 @@ export default function Sawi3V2() {
                         Lanjut →
                     </Link>
                 </motion.div>
-            </div>
-
-            {/* Modal untuk Layar Besar */}
-            <div className='hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm md:flex items-center justify-center p-4'>
-                <div className='bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 text-center border border-gray-100'>
-                    <div className='mb-6 inline-flex items-center justify-center w-16 h-16 bg-blue-50 rounded-full'>
-                        <span className='text-3xl'>📱</span>
-                    </div>
-                    
-                    <h2 className='text-2xl font-bold text-gray-900 mb-4'>
-                        Optimasi Perangkat Mobile
-                    </h2>
-                    
-                    <p className='text-gray-600 leading-relaxed mb-8'>
-                        Halo! Pinisi saat ini sedang dirancang khusus untuk memberikan pengalaman terbaik di perangkat 
-                        <span className='font-semibold text-blue-600'> smartphone</span>.
-                    </p>
-                    
-                    <div className='bg-gray-50 rounded-xl p-4 text-sm text-gray-500'>
-                        Silakan buka melalui HP Anda atau perkecil jendela browser ini untuk melihat progres tampilan kami.
-                    </div>
-
-                    <div className='mt-8 pt-6 border-t border-gray-100'>
-                        <p className='text-xs text-gray-400 italic'>
-                            Pinisi Development Team
-                        </p>
-                    </div>
-                </div>
             </div>
         </main>
     );

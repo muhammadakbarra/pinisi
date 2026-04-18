@@ -24,7 +24,7 @@ export default function Sawi21V2() {
             </div>
 
             {/* Konten Utama Mobile */}
-            <div className='relative z-10 p-6 md:hidden flex flex-col min-h-screen gap-10 overflow-y-auto'>
+            <div className='relative z-10 p-6 md:hidden flex flex-col min-h-screen gap-10 overflow-y-auto pb-24'>
                 {/* Teks Cerita 1 Tanpa Card */}
                 <motion.div 
                     initial="hidden"
@@ -68,34 +68,6 @@ export default function Sawi21V2() {
                         Lanjut →
                     </Link>
                 </motion.div>
-            </div>
-
-            {/* Modal untuk Layar Besar */}
-            <div className='hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm md:flex items-center justify-center p-4'>
-                <div className='bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 text-center border border-gray-100'>
-                    <div className='mb-6 inline-flex items-center justify-center w-16 h-16 bg-blue-50 rounded-full'>
-                        <span className='text-3xl'>📱</span>
-                    </div>
-                    
-                    <h2 className='text-2xl font-bold text-gray-900 mb-4'>
-                        Optimasi Perangkat Mobile
-                    </h2>
-                    
-                    <p className='text-gray-600 leading-relaxed mb-8'>
-                        Halo! Pinisi saat ini sedang dirancang khusus untuk memberikan pengalaman terbaik di perangkat 
-                        <span className='font-semibold text-blue-600'> smartphone</span>.
-                    </p>
-                    
-                    <div className='bg-gray-50 rounded-xl p-4 text-sm text-gray-500'>
-                        Silakan buka melalui HP Anda atau perkecil jendela browser ini untuk melihat progres tampilan kami.
-                    </div>
-
-                    <div className='mt-8 pt-6 border-t border-gray-100'>
-                        <p className='text-xs text-gray-400 italic'>
-                            Pinisi Development Team
-                        </p>
-                    </div>
-                </div>
             </div>
         </main>
     );
